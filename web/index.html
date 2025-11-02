@@ -1,261 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blinkit · The Gourmet Store Wireframe</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="top-bar">
-    <div class="status-row">
-      <div class="status"><span class="icon" aria-hidden="true">🕒</span>11 minutes</div>
-      <div class="status">Delivering to <strong>MAYU • Saubhagyashree Ruia, C-115</strong></div>
-      <div class="status battery">🔋 80%</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blinkit · The Gourmet Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-background">
+      <div class="app-shell" role="application">
+        <header class="primary-header">
+          <div class="status-bar" aria-label="Status information">
+            <span class="time" aria-hidden="true">14:33</span>
+            <span class="promise">Blinkit in <strong>11 minutes</strong></span>
+            <div class="status-icons" aria-hidden="true">
+              <span>📶</span>
+              <span>🔋 80%</span>
+            </div>
+          </div>
+
+          <div class="location-card" aria-label="Delivery address">
+            <div class="location-copy">
+              <span class="greeting">MAYU</span>
+              <span class="address">Saubhagyashree Ruia, C-115</span>
+            </div>
+            <div class="avatar" aria-hidden="true">M</div>
+          </div>
+
+          <label class="search-bar" for="search">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M11 4a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm8.707 13.293a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 0 1-1.414 0l-2.822-2.822"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+            <input
+              id="search"
+              type="search"
+              placeholder="Search &quot;20000 mah powerbank&quot;"
+              aria-label="Search Blinkit"
+            />
+          </label>
+
+          <nav class="quick-links" aria-label="Primary categories">
+            <button class="nav-item active" type="button">
+              <span class="nav-icon">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/1f1d16/grid.png" alt="All icon" />
+              </span>
+              <span class="nav-label">All</span>
+            </button>
+            <button class="nav-item gourmet" type="button">
+              <span class="nav-icon">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/cloche.png" alt="Gourmet icon" />
+              </span>
+              <span class="nav-label">Gourmet Store</span>
+            </button>
+            <button class="nav-item" type="button">
+              <span class="nav-icon">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/1f1d16/pill.png" alt="Pharmacy icon" />
+              </span>
+              <span class="nav-label">Pharmacy</span>
+            </button>
+            <button class="nav-item" type="button">
+              <span class="nav-icon">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/1f1d16/flash-on.png" alt="Electronics icon" />
+              </span>
+              <span class="nav-label">Electronics</span>
+            </button>
+            <button class="nav-item" type="button">
+              <span class="nav-icon">
+                <img src="https://img.icons8.com/fluency-systems-filled/48/1f1d16/sparkling.png" alt="Beauty icon" />
+              </span>
+              <span class="nav-label">Beauty</span>
+            </button>
+          </nav>
+        </header>
+
+        <main class="page" role="main">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-banner">
+              <figure class="hero-figure left" role="img" aria-label="Curated produce"></figure>
+              <div class="hero-copy">
+                <h1 id="hero-title">The Gourmet Store</h1>
+                <p class="subtitle">bringing the world to your doorstep</p>
+              </div>
+              <figure class="hero-figure right" role="img" aria-label="Luxury ingredients"></figure>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-labelledby="categories-title">
+            <div class="section-header">
+              <h2 id="categories-title">Shop by Category</h2>
+              <p class="section-hint">Hand-picked favourites across the aisle.</p>
+            </div>
+            <div class="grid circle-grid">
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Fruits &amp; Vegetables</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>The Bakery</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1580915411954-282cb1c6a097?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>The Dairy</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Eggs, Seafood and Meats</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Tea, Coffee and Beverages</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31b?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>The Pantry</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Ice cream and Frozen</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1587049352851-8d2c8bd6d0c0?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Everyday Staples</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1558944351-c3adba21c66f?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Pet Supplies</h3>
+              </article>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-labelledby="cuisine-title">
+            <div class="section-header">
+              <h2 id="cuisine-title">Shop by Cuisine</h2>
+              <p class="section-hint">Transport your kitchen around the world.</p>
+            </div>
+            <div class="grid rounded-grid">
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1604908177075-61b609391f66?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Korean</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Japanese</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Italian</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Chinese</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Mexican</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Thai</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Mediterranean</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1608032361620-9e8ce1c3190e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Middle-Eastern</h3>
+              </article>
+              <article class="tile">
+                <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>French</h3>
+              </article>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-labelledby="lifestyle-title">
+            <div class="section-header">
+              <h2 id="lifestyle-title">Lifestyle Choices</h2>
+              <p class="section-hint">Tailor your basket to every need.</p>
+            </div>
+            <div class="grid arch-grid">
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1506086679525-9d0b45b0b2d6?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Glutenfree</h3>
+              </article>
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Vegan</h3>
+              </article>
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>High Protein</h3>
+              </article>
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1478144592103-25e218a04891?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Low Carbs</h3>
+              </article>
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Organic</h3>
+              </article>
+              <article class="tile">
+                <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Guilt Free</h3>
+              </article>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-labelledby="brands-title">
+            <div class="section-header">
+              <h2 id="brands-title">Shop by Brands</h2>
+              <p class="section-hint">Signature labels trusted worldwide.</p>
+            </div>
+            <div class="grid circle-grid four-up">
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://eleftheria.com.gr/wp-content/uploads/2021/03/eleftheria-logo-gold.png');"></div>
+                <h3>Eleftheria</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://www.cambaytiger.com/wp-content/uploads/2020/08/Cambay-Tiger-Logo.png');"></div>
+                <h3>Cambay Tiger</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d3/Ben_%26_Jerry%27s_logo.svg');"></div>
+                <h3>Ben &amp; Jerry</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/sco/4/45/Starbucks_Corporation_Logo_2011.svg');"></div>
+                <h3>Starbucks</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://krishicress.com/wp-content/uploads/2020/07/krishicress-logo.png');"></div>
+                <h3>Krishi Cress</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/bb/Colavita_logo.svg');"></div>
+                <h3>Colavita</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/b3/Oatly_logo.svg');"></div>
+                <h3>Oatly</h3>
+              </article>
+              <article class="tile">
+                <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4d/Nespresso_logo.svg');"></div>
+                <h3>Nespresso</h3>
+              </article>
+            </div>
+          </section>
+
+          <section class="grid-section" aria-labelledby="meal-title">
+            <div class="section-header">
+              <h2 id="meal-title">Shop by Meal</h2>
+              <p class="section-hint">Curated menus for every moment.</p>
+            </div>
+            <div class="grid square-grid">
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1579758629939-037fdd6e8003?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Pre-workout meal</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1507537509458-b8312d35a233?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Post-workout meal</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Breakfast</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Lunch</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Snacks</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Dinner</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Dessert</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Late night cravings</h3>
+              </article>
+              <article class="tile">
+                <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=300&q=80');"></div>
+                <h3>Party Essentials</h3>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <footer class="footer">
+          <p>Concept wireframe for Blinkit Gourmet Store • Mobile-first exploration.</p>
+        </footer>
+      </div>
     </div>
-    <div class="nav-row">
-      <img class="logo" src="https://seeklogo.com/images/B/blinkit-logo-469C3D2C21-seeklogo.com.png" alt="Blinkit logo" />
-      <div class="search">
-        <input type="search" placeholder="Search &quot;20000 mah powerbank&quot;" aria-label="Search" />
-      </div>
-      <div class="profile">
-        <span class="avatar" aria-hidden="true">M</span>
-        <span class="name">Mayu</span>
-      </div>
-    </div>
-    <nav class="category-nav" aria-label="Primary">
-      <button class="category-button">All</button>
-      <button class="category-button gourmet active">
-        <span class="gourmet-icon" aria-hidden="true">🍇</span>
-        <span class="label">Gourmet Store</span>
-      </button>
-      <button class="category-button">Pharmacy</button>
-      <button class="category-button">Electronics</button>
-      <button class="category-button">Beauty</button>
-      <button class="category-button">Home</button>
-    </nav>
-  </header>
-
-  <main class="page">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-image left" role="img" aria-label="Luxury gourmet selection"></div>
-      <div class="hero-copy">
-        <h1 id="hero-title">The Gourmet Store</h1>
-        <p class="subtitle">bringing the world to your doorstep</p>
-      </div>
-      <div class="hero-image right" role="img" aria-label="Premium ingredients"></div>
-    </section>
-
-    <section class="grid-section" aria-labelledby="categories-title">
-      <div class="section-header">
-        <h2 id="categories-title">Shop by Category</h2>
-      </div>
-      <div class="grid circle-grid">
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Fruits &amp; Vegetables</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>The Bakery</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1580915411954-282cb1c6a097?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>The Dairu</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Eggs, Seafood and Meats</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Tea, Coffee and Beverages</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1586201375761-83865001e31b?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>The Pantry</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Ice cream and Frozen</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1587049352851-8d2c8bd6d0c0?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Everyday Staples</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://images.unsplash.com/photo-1558944351-c3adba21c66f?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Pet Supplies</h3>
-        </article>
-      </div>
-    </section>
-
-    <section class="grid-section" aria-labelledby="cuisine-title">
-      <div class="section-header">
-        <h2 id="cuisine-title">Shop by Cuisine</h2>
-      </div>
-      <div class="grid rounded-grid">
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1604908177075-61b609391f66?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Korean</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Japanese</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Italian</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Chinese</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Mexican</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Thai</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Mediterranean</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1608032361620-9e8ce1c3190e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Middle-Eastern</h3>
-        </article>
-        <article class="tile">
-          <div class="icon rounded" style="background-image: url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>French</h3>
-        </article>
-      </div>
-    </section>
-
-    <section class="grid-section" aria-labelledby="lifestyle-title">
-      <div class="section-header">
-        <h2 id="lifestyle-title">Lifestyle Choices</h2>
-      </div>
-      <div class="grid arch-grid">
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1506086679525-9d0b45b0b2d6?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Glutenfree</h3>
-        </article>
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Vegan</h3>
-        </article>
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1546069901-eacef0df6022?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>High Protein</h3>
-        </article>
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1478144592103-25e218a04891?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Low Carbs</h3>
-        </article>
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Organic</h3>
-        </article>
-        <article class="tile">
-          <div class="icon arch" style="background-image: url('https://images.unsplash.com/photo-1528712306091-ed0763094c98?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Guilt Free</h3>
-        </article>
-      </div>
-    </section>
-
-    <section class="grid-section" aria-labelledby="brands-title">
-      <div class="section-header">
-        <h2 id="brands-title">Shop by Brands</h2>
-      </div>
-      <div class="grid circle-grid four-up">
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://eleftheria.com.gr/wp-content/uploads/2021/03/eleftheria-logo-gold.png');"></div>
-          <h3>Eleftheria</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://www.cambaytiger.com/wp-content/uploads/2020/08/Cambay-Tiger-Logo.png');"></div>
-          <h3>Cambay Tiger</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d3/Ben_%26_Jerry%27s_logo.svg');"></div>
-          <h3>Ben &amp; Jerry</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/sco/4/45/Starbucks_Corporation_Logo_2011.svg');"></div>
-          <h3>Starbucks</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://krishicress.com/wp-content/uploads/2020/07/krishicress-logo.png');"></div>
-          <h3>Krishi Cress</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/bb/Colavita_logo.svg');"></div>
-          <h3>Colavita</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/b/b3/Oatly_logo.svg');"></div>
-          <h3>Oatly</h3>
-        </article>
-        <article class="tile">
-          <div class="icon circle" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4d/Nespresso_logo.svg');"></div>
-          <h3>Nespresso</h3>
-        </article>
-      </div>
-    </section>
-
-    <section class="grid-section" aria-labelledby="meal-title">
-      <div class="section-header">
-        <h2 id="meal-title">Shop by Meal</h2>
-      </div>
-      <div class="grid square-grid">
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1579758629939-037fdd6e8003?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Pre-workout meal</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1507537509458-b8312d35a233?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Post-workout meal</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Breakfast</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Lunch</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Snacks</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Dinner</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Dessert</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Late night cravings</h3>
-        </article>
-        <article class="tile">
-          <div class="icon square" style="background-image: url('https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=300&q=80');"></div>
-          <h3>Party Essesntials</h3>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>Wireframe concept for Blinkit Gourmet Store • Crafted for stakeholder review.</p>
-  </footer>
-</body>
+  </body>
 </html>
